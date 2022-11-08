@@ -1,5 +1,5 @@
 var engine = {
-    "cores": ['verde','roxo','rosa','vermelho','amarelo','laranja','cinza','preto','marrom'],
+    "cores": ['verde','roxo','rosa','vermelho','amarelo','laranja','cinza','preto','marrom','branco'],
     "hexadecimais":{
       'verde':'#02EF00',
       'roxo':'#790093',
@@ -10,6 +10,7 @@ var engine = {
       'cinza':'#696969',
       'preto':'#141414',
       'marrom': '#8B4513',
+      'branco': '#FFFFFF'
     },
     "moedas":0
 }
@@ -94,7 +95,7 @@ if(window.SpeechRecognition || window.webkitSpeechRecognition){
 
 
 }else{
-  alert('não tem suporte');
+  alert('este navegador não tem suporte, por favor tente utilizar outro');
 }
 
 
