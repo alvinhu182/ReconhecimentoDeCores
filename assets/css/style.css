@@ -32,6 +32,7 @@ header#cabecalho-principal{
     flex-direction: row;
     justify-content: center;
     
+    
 }
 
 #pontuacao-jogo img {
@@ -63,6 +64,7 @@ section#corpo div#esquerda{
 
 }
 
+
 section#corpo div#esquerda div#cor-atual{
     margin-top: 20px;
     height: 200px;
@@ -81,6 +83,7 @@ section#corpo div#esquerda button#btn-responder {
     font-weight: bold;
     color:white;
     padding: 15px 45px;
+    cursor: pointer;
 
 }
 
@@ -97,3 +100,136 @@ justify-content: center;
 #cor-na-caixa{
     color: #b30000;
 }
+
+@media only screen and (min-width: 412px){
+    #pontuacao-jogo{
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 12px 0px;
+        margin: 10px  ;
+        
+    }       
+}
+
+@media only screen and (min-width: 412px){
+    #nome-jogo{
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.25em;
+    }
+    
+}
+
+@media only screen and (min-width: 412px){
+    #direita{
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+       
+    }
+    
+}
+
+@media only screen and (min-width: 412px){
+    section#corpo div#esquerda button#btn-responder{
+
+        margin-top: 10px;
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 10px;
+        
+        font-size: 25px;
+        font-weight: bold;
+        color:white;
+        padding: 15px 25px;
+
+    }
+    
+}
+
+
+@media only screen and (min-width: 576px){
+    #pontuacao-jogo{
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 12px 0px;
+        margin: 10px  ;
+        
+    }       
+}
+
+@media only screen and (min-width: 576px){
+    #nome-jogo{
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.25em;
+    }
+    
+}
+
+@media only screen and (min-width: 576px){
+    #direita{
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+       
+    }
+    
+}
+
+@media only screen and (min-width: 576px){
+    section#corpo div#esquerda button#btn-responder{
+
+        margin-top: 10px;
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 10px;
+        
+        font-size: 25px;
+        font-weight: bold;
+        color:white;
+        padding: 15px 25px;
+        cursor: pointer;
+    }
+    
+}
+
+/*
+@media only screen and (min-width: 576px) {
+	#container {
+	  width: 540px;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+  }
+  @media  only screen and (min-width: 768px) {
+	#container {
+	  width: 720px;
+	}
+  }
+  @media  only screen and (min-width: 992px) {
+	#container {
+	  width: 960px;
+	}
+  }
+  @media only screen and (min-width: 1200px) {
+	#container {
+	  width: 1140px;
+	}
+  }
+  @media only screen and (min-width: 1400px) {
+	#container {
+	  width: 1320px;
+	}
+  }
+
+  */
+  
