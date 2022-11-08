@@ -1,5 +1,5 @@
 
-# webpage - com tema do Mario, para reconhecimento de cores
+# Super Mario Cores - reconhecimento de cores para crianças
 
 essa pagina visa praticar o reconhecimento de cores para as crianças, foi feito com base no projeto do curso da DIO
 ## Demonstração
