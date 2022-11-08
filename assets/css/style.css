@@ -6,6 +6,8 @@
 
 body {
     background-color: #b30000;
+    overflow-x: hidden; 
+    overflow-y: hidden; 
 }
 
 header#cabecalho-principal{
@@ -201,6 +203,76 @@ justify-content: center;
     }
     
 }
+
+@media only screen and (min-width: 280px){
+    #pontuacao-jogo{
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px 10px;
+        margin: 20px 10px;
+      font-size: 1em;
+        
+    }       
+}
+@media only screen and (min-width: 280px){
+    h3{
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (min-width: 280px){
+    #nome-jogo{
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1em;
+    }
+    
+}
+
+@media only screen and (min-width: 280px){
+    #direita{
+        width: 130px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+       
+    }
+    
+}
+
+@media only screen and (min-width: 280px){
+    section#corpo div#esquerda button#btn-responder{
+
+        margin-top: 10px;
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 10px;
+        
+        font-size: 25px;
+        font-weight: bold;
+        color:white;
+        padding: 15px 25px;
+        cursor: pointer;
+    }
+    
+}
+
+@media only screen and (min-width: 280px){
+    header#cabecalho-principal{
+        background-color: #dddddd;
+        width: 120%;
+        height: 40px;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
 
 /*
 @media only screen and (min-width: 576px) {

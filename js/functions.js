@@ -7,8 +7,8 @@ var engine = {
       'vermelho':'#E90808',
       'amarelo':'#E7D703',
       'laranja':'#F16529',
-      'cinza':'#696969',
-      'preto':'#141414',
+      'cinza':'#808080',
+      'preto':'#000000',
       'marrom': '#8B4513',
       'branco': '#FFFFFF'
     },
