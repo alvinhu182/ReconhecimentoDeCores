@@ -6,10 +6,20 @@
 }
 
 body {
-    background-color: #b30000;
+    background-color: #820b0b;
     overflow-x: hidden; 
     overflow-y: hidden; 
    
+}
+#titulo{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    font-weight: bolder;
+    color: white;
+    font-size: 2em;
 }
 
 header#cabecalho-principal{
@@ -25,7 +35,7 @@ header#cabecalho-principal{
 #pontuacao-jogo{
     background-color: #61B1EA ;
     border-radius: 50px;
-    padding: 10px;
+    padding: 4px 20px;
     color: white;
     padding: 4px 60px;
     font-size: 1.15em;
@@ -33,8 +43,7 @@ header#cabecalho-principal{
     margin-left: 15px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    
+    justify-content: center;    
     
 }
 
@@ -51,27 +60,34 @@ header#cabecalho-principal{
 section#corpo{
     display: flex;
     flex-direction: row;
-    margin-top: 15px;
+    margin-top: 250px;
+
+
 }
 
 
 section#corpo div#esquerda{
 
-    margin-left: 10px;
+    margin-right: -600px;
     color: white;
     display: flex;
     flex-direction: column;
-    width: 60%;
-
+    width: 80%;
     align-items: center;
 
 }
-
+#direita{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
 
 section#corpo div#esquerda div#cor-atual{
     margin-top: 20px;
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     border: 6px solid black;
     border-radius: 15px;
 }
@@ -101,208 +117,145 @@ justify-content: center;
 }
 
 #cor-na-caixa{
-    color: #b30000;
+    color: #820b0b;
 }
 
-@media only screen and (min-width: 412px){
-    #pontuacao-jogo{
-        width: 150px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 12px 0px;
-        margin: 10px  ;
-        
-    }       
+section#corpo div#esquerda {
+    margin-right: 0; /* Removido o margin negativo para mobile */
+    margin-bottom: 20px; /* Espaçamento entre os elementos em mobile */
 }
 
-@media only screen and (min-width: 412px){
-    #nome-jogo{
-        width: 200px;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 1.25em;
+
+
+
+/* Media Queries para dispositivos móveis */
+@media screen and (max-width: 767px) {
+    #titulo {
+        font-size: 1.5em;
+        margin-top: 20px;
+    }
+
+    header#cabecalho-principal {
+        height: 100px;
     }
     
-}
-
-@media only screen and (min-width: 412px){
-    #direita{
-        width: 200px;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        flex-direction: column;
-       
-    }
-    
-}
-
-@media only screen and (min-width: 412px){
-    section#corpo div#esquerda button#btn-responder{
-
-        margin-top: 10px;
-        background-color: transparent;
-        border: 2px solid white;
-        border-radius: 10px;
-        
-        font-size: 25px;
-        font-weight: bold;
-        color:white;
-        padding: 15px 25px;
-
-    }
-    
-}
-
-
-@media only screen and (min-width: 576px){
-    #pontuacao-jogo{
-        width: 150px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 12px 0px;
-        margin: 10px  ;
-        
-    }       
-}
-
-@media only screen and (min-width: 576px){
-    #nome-jogo{
-        width: 200px;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 1.25em;
-    }
-    
-}
-
-@media only screen and (min-width: 576px){
-    #direita{
-        width: 200px;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        flex-direction: column;
-       
-    }
-    
-}
-
-@media only screen and (min-width: 576px){
-    section#corpo div#esquerda button#btn-responder{
-
-        margin-top: 10px;
-        background-color: transparent;
-        border: 2px solid white;
-        border-radius: 10px;
-        
-        font-size: 25px;
-        font-weight: bold;
-        color:white;
-        padding: 15px 25px;
-        cursor: pointer;
-    }
-    
-}
-
-@media only screen and (min-width: 280px){
-    #pontuacao-jogo{
-        width: 150px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 0px 10px;
-        margin: 20px 10px;
-      font-size: 1em;
-        
-    }       
-}
-@media only screen and (min-width: 280px){
-    h3{
+   
+    #pontuacao-jogo, #nome-jogo {
         font-size: 0.9em;
     }
-}
 
-@media only screen and (min-width: 280px){
-    #nome-jogo{
-        width: 150px;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 1em;
+    #pontuacao-jogo img {
+        height: 15px;
     }
-    
+
+    #btn-responder {
+        font-size: 18px;
+        padding: 8px 20px;
+    }
+
+    section#corpo {
+        margin-top: 100px;
+        flex-direction: column;
+        
+    }
+    #direita{
+        margin-left: 150px;
+        width: 200px;
+        
+    }
+
+    #cor-atual {
+        height: 100px;
+        width: 100px;
+    }
 }
 
-@media only screen and (min-width: 280px){
-    #direita{
-        width: 130px;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        flex-direction: column;
+/* Media Queries para tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #titulo {
+        font-size: 1.75em;
+        margin-top: 70px;
        
     }
-    
-}
 
-@media only screen and (min-width: 280px){
-    section#corpo div#esquerda button#btn-responder{
+    header#cabecalho-principal, footer#rodape {
+        height: 55px;
+    }
 
-        margin-top: 10px;
-        background-color: transparent;
-        border: 2px solid white;
-        border-radius: 10px;
+    #pontuacao-jogo, #nome-jogo {
+        font-size: 1em;
+    }
+
+    #direita{
+        margin-left: 80px;
+        width: 400px;
+       
+    }
+    #esquerda{
+        width: 400px;
+        height: 700px;
         
+    }
+    #btn-responder {
+        font-size: 20px;
+        padding: 12px 35px;
+        
+    }
+
+    #cor-atual {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+/* Media Queries para desktops */
+ @media screen and (min-width: 1024px) {
+    #titulo {
+        font-size: 2em;
+        margin-top: 100px;
+    }
+
+    header#cabecalho-principal {
+        height: 60px;
+    }
+
+    #pontuacao-jogo, #nome-jogo {
+        font-size: 1.15em;
+    }
+
+    #btn-responder {
         font-size: 25px;
-        font-weight: bold;
-        color:white;
-        padding: 15px 25px;
-        cursor: pointer;
+        padding: 15px 45px;
     }
-    
-}
 
-@media only screen and (min-width: 280px){
-    header#cabecalho-principal{
-        background-color: #dddddd;
-        width: 120%;
-        height: 40px;
-    
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+    section#corpo {
+        margin-top: 250px;
+        
     }
-}
 
+    #direita {
+      width: 400px;
+      height: 500px;
+      margin-right: 400px;
+    }
 
-/*
-@media only screen and (min-width: 576px) {
-	#container {
-	  width: 540px;
-	  margin-left: auto;
-	  margin-right: auto;
-	}
-  }
-  @media  only screen and (min-width: 768px) {
-	#container {
-	  width: 720px;
-	}
-  }
-  @media  only screen and (min-width: 992px) {
-	#container {
-	  width: 960px;
-	}
-  }
-  @media only screen and (min-width: 1200px) {
-	#container {
-	  width: 1140px;
-	}
-  }
-  @media only screen and (min-width: 1400px) {
-	#container {
-	  width: 1320px;
-	}
-  }
-
-  */
   
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
